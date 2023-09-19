@@ -1,0 +1,21 @@
+uuid: e8872897-b4ae-4a73-9cde-cfbd41f57829
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_release_date
+    - node.type.movie_awards
+  module:
+    - datetime
+id: node.movie_awards.field_release_date
+field_name: field_release_date
+entity_type: node
+bundle: movie_awards
+label: 'Release Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

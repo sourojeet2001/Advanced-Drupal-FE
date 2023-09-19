@@ -1,0 +1,22 @@
+uuid: 77e5edde-7181-45b6-98e8-b2298968b661
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movies_
+id: node.movies_.promote
+field_name: promote
+entity_type: node
+bundle: movies_
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
