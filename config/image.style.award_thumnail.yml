@@ -1,0 +1,15 @@
+uuid: 315cb7d2-fbf2-495b-85f8-df5c84f013d1
+langcode: en
+status: true
+dependencies: {  }
+name: award_thumnail
+label: 'Award Thumnail'
+effects:
+  e64b16ce-68b2-47b0-b9b4-a58f5fd29e55:
+    uuid: e64b16ce-68b2-47b0-b9b4-a58f5fd29e55
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 200
+      anchor: center-center

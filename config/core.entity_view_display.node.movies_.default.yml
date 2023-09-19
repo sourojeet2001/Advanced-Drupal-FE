@@ -1,0 +1,32 @@
+uuid: 7749e449-987a-4f61-aed2-489890f864e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movies_.field_movie_image
+    - node.type.movies_
+  module:
+    - image
+    - user
+id: node.movies_.default
+targetEntityType: node
+bundle: movies_
+mode: default
+content:
+  field_movie_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

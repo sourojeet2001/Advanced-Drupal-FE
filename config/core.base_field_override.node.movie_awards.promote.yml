@@ -1,0 +1,22 @@
+uuid: 68b8cce7-f7b5-4a0f-9d31-f1fb1b83f214
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movie_awards
+id: node.movie_awards.promote
+field_name: promote
+entity_type: node
+bundle: movie_awards
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

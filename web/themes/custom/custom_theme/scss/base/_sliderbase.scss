@@ -1,0 +1,24 @@
+/* This file adds basic style for the movies banner slider. */
+body {
+  background-color: black;
+}
+.custom-header {
+  display: flex;
+  justify-content: space-around;
+}
+.custom-header h1{
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 5px;
+}
+.custom-nav .navbar-nav {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+.custom-nav .navbar-nav li:hover {
+  color: red;
+}
