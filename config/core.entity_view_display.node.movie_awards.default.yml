@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.movie_awards.body
     - field.field.node.movie_awards.field_movie_poster
     - field.field.node.movie_awards.field_release_date
+    - image.style.thumbnail
     - node.type.movie_awards
   module:
     - datetime
@@ -18,9 +19,10 @@ bundle: movie_awards
 mode: default
 content:
   body:
-    type: text_default
+    type: text_trimmed
     label: hidden
-    settings: {  }
+    settings:
+      trim_length: 400
     third_party_settings: {  }
     weight: 101
     region: content
@@ -29,7 +31,7 @@ content:
     label: above
     settings:
       image_link: ''
-      image_style: ''
+      image_style: thumbnail
       image_loading:
         attribute: lazy
     third_party_settings: {  }

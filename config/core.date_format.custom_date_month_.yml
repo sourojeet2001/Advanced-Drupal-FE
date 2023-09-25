@@ -1,0 +1,8 @@
+uuid: 26352dae-b2ff-4d3d-a442-d5f32ba91871
+langcode: en
+status: true
+dependencies: {  }
+id: custom_date_month_
+label: 'Custom (Date- Month)'
+locked: false
+pattern: 'd  F'

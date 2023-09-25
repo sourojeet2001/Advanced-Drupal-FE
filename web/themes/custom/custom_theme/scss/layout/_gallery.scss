@@ -1,0 +1,61 @@
+/* Adds style for awards page.*/
+.awards-header {
+  margin: 0 auto;
+}
+.view-content {
+  background-color: #e2e2db;
+  padding: 50px;
+  padding-right: 16px;
+}
+.views-field.views-field-title {
+  position: relative;
+}
+.title-color {
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  top: -50px;
+  left: 16px;
+  font-size: 27px;
+}
+.img-fluid {
+  opacity: 1;
+  display: block;
+  height: auto;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.field-content {
+  position: relative;
+}
+.field-content:hover .overlay {
+  opacity: 0.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #e34b67;
+}
+
+.views-field-field-movie-poster:hover ~ .views-field-field-release-date .datetime {
+  transition: all 0.9s ease-in-out;
+  visibility: visible;
+}
+
+.datetime {
+  position: absolute;
+  top: -128px;
+  right: 58px;
+  color: white;
+  visibility: hidden;
+}

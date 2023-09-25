@@ -7,7 +7,7 @@ logo:
   use_default: 1
 favicon:
   use_default: 1
-b5_top_container: 'container-fluid m-0 p-0'
+b5_top_container: container
 b5_top_container_config: ''
 b5_body_schema: none
 b5_body_bg_schema: none
