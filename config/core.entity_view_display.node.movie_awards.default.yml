@@ -1,0 +1,54 @@
+uuid: 3807988b-f15c-40d2-93ee-f60c70114d48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movie_awards.body
+    - field.field.node.movie_awards.field_movie_poster
+    - field.field.node.movie_awards.field_release_date
+    - image.style.thumbnail
+    - node.type.movie_awards
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.movie_awards.default
+targetEntityType: node
+bundle: movie_awards
+mode: default
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 400
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_movie_poster:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_release_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

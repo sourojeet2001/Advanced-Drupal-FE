@@ -1,0 +1,34 @@
+uuid: b238d712-b04b-4665-801a-e3a74303365b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.movie_awards.body
+    - field.field.node.movie_awards.field_movie_poster
+    - field.field.node.movie_awards.field_release_date
+    - node.type.movie_awards
+  module:
+    - text
+    - user
+id: node.movie_awards.teaser
+targetEntityType: node
+bundle: movie_awards
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_movie_poster: true
+  field_release_date: true
