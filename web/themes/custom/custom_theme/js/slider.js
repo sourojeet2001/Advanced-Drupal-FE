@@ -1,8 +1,7 @@
 (function ($, Drupal, once) {
   Drupal.behaviors.sliderBehaviour = {
     attach: function (context, settings) {
-      console.log('attach');
-      once('html', context).forEach(function (element) {
+      once('newSlider', 'html', context).forEach(function (element) {
         $('.slider-for').slick({
           slidesToShow: 1,
           slidesToScroll: 1,

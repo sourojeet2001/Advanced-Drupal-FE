@@ -23,6 +23,7 @@ slick:
     //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js: {type: external}
     js/slider.js: {}
   dependencies:
+      - core/drupal
       - core/once
       - core/jquery
       - core/drupalSettings
