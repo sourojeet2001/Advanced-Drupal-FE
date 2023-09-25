@@ -35,8 +35,10 @@
             saveData();
           } 
           else if (e.target.tagName === 'SPAN') {
-            e.target.parentElement.remove();
-            data.pop(e.target.parentElement);
+            var listItem = e.target.parentElement;
+            var itemIndex = Array.from(listContainer.children()).indexOf(listItem);
+            $(listContainer.children().eq(itemIndex)).remove();
+            storedData.splice(itemIndex, 1);
             saveData();
           }
         });
@@ -44,16 +46,18 @@
         // This function is used to save the todoList data on browser localStorage.
         function saveData() {
           if (listContainer) {
-            if (data.length === 0) {
-              return;
-            }
-            let existingData = JSON.parse(localStorage.getItem('data')) || [];
-            if (existingData) {
-              existingData = existingData.concat(data);
-              localStorage.setItem('data', JSON.stringify(existingData));
+            let existingData = storedData;
+            if (data.length > 0) {
+              if (existingData) {
+                existingData = existingData.concat(data);
+                localStorage.setItem('data', JSON.stringify(existingData));
+              }
+              else {
+                localStorage.setItem('data', JSON.stringify(data));
+              }
             }
             else {
-              localStorage.setItem('data', JSON.stringify(data));
+              localStorage.setItem('data', JSON.stringify(existingData));
             }
           }
         }
@@ -73,17 +77,6 @@
           } 
         }
         showList();
-
-        // This function is used to clear a partuicular value from the localStorage.
-        function clearLocalStorageByValue(value) {
-          for (let i = 0; i < localStorage.length; i++) {
-            const key = localStorage.key(i);
-            const storedValue = localStorage.getItem(key);
-            if (storedValue === value) {
-              localStorage.removeItem(key);
-            }
-          }
-        }
       });
     },
     

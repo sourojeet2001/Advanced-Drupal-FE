@@ -6,3 +6,8 @@ todo:
   css:
     theme:
       dist/css/main.min.css: {}
+
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
