@@ -27,7 +27,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Movie Awards'
+      title: ''
       fields:
         field_movie_poster:
           id: field_movie_poster
@@ -198,7 +198,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: h4
-          element_class: ''
+          element_class: mycustom-date-formatter
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -213,7 +213,7 @@ display:
           type: datetime_default
           settings:
             timezone_override: Asia/Kolkata
-            format_type: olivero_medium
+            format_type: custom_date_month_
           group_column: value
           group_columns: {  }
           group_rows: true

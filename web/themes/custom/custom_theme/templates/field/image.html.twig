@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Theme override of an image.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the img tag.
+ * - style_name: (optional) The name of the image style applied.
+ *
+ * @see template_preprocess_image()
+ */
+#}
+{# {% extends "@custom_theme/field/views-view--movie-awards--page-1.html.twig" %} #}
+{{ attach_library('custom_theme/awards') }}
+{%
+set classes = [
+  style_name ? 'image-style-' ~ style_name|clean_class,
+]
+%}
+<div class="box">
+<a href="#popup-box{{ contentId }}">
+  <img{{ attributes.addClass(classes) }} />
+</a>
+</div>
+<div class="overlay"></div>
