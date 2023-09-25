@@ -1,0 +1,18 @@
+# Main theme library.
+todo:
+  js:
+    js/todo.js: {}
+  css:
+    theme:
+      dist/css/main.min.css: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupalSettings
+    - core/once
+
+blogs:
+  version: 1.x
+  css:
+    theme:
+      dist/css/blogsmain.min.css: {}

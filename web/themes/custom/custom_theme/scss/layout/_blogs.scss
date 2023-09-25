@@ -1,0 +1,37 @@
+@use "../base/blogvariables" as *;
+
+.blog__title {
+  color: $title_color;
+}
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.separator {
+  border: 2px solid $separator_color;
+  margin: 37px 0px
+}
+.blog__img {
+  height: $blog_image-height;
+  width: blog_image-width;
+  border: 5px solid $border_color;
+  border-radius: 50%;
+  margin: 42px 6px;
+}
+.blog__img img {
+  padding: 10px;
+  height: $image_height;
+  width: $image_width;
+  border-radius: 50%;
+}
+.blog__content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  flex: 0 0 50%;
+  justify-content: center;
+  margin: 42px 6px;
+}
+.blog__content:last-child {
+  display: inline;
+}
