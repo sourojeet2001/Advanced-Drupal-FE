@@ -1,0 +1,38 @@
+uuid: e5a48ec9-73a1-43be-9a29-d9e325dacf37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_image
+    - paragraphs.paragraphs_type.latest_news
+  module:
+    - image
+id: paragraph.latest_news.field_news_image
+field_name: field_news_image
+entity_type: paragraph
+bundle: latest_news
+label: 'News Image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

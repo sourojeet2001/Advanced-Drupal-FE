@@ -1,0 +1,20 @@
+uuid: e8622760-780b-4607-87ae-8adc726683b0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - my_hcl
+_core:
+  default_config_hash: qYppfxaWSy6BwGNKdMch1PeUA24PlRTt39jQft6A6Kg
+id: my_hcl_page_title
+theme: my_hcl
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

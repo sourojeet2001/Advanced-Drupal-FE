@@ -1,0 +1,22 @@
+uuid: b3e7e6e3-d509-429b-88d2-44de4a02c66c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_story_body
+    - paragraphs.paragraphs_type.our_stories
+  module:
+    - text
+id: paragraph.our_stories.field_story_body
+field_name: field_story_body
+entity_type: paragraph
+bundle: our_stories
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

@@ -1,0 +1,67 @@
+uuid: ebc091ec-b2a6-4143-a75d-8d72d57c861b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hcl_banner.field_banner_content
+    - field.field.node.hcl_banner.field_banner_image
+    - field.field.node.hcl_banner.field_latest_news
+    - field.field.node.hcl_banner.field_link
+    - image.style.banner
+    - node.type.hcl_banner
+  module:
+    - entity_reference_revisions
+    - image
+    - link
+    - text
+    - user
+id: node.hcl_banner.default
+targetEntityType: node
+bundle: hcl_banner
+mode: default
+content:
+  field_banner_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_banner_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: banner
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_latest_news:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

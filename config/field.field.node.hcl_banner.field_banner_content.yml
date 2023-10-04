@@ -1,0 +1,22 @@
+uuid: b3ce504b-1aa2-4a47-b750-fe65ef1a16bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner_content
+    - node.type.hcl_banner
+  module:
+    - text
+id: node.hcl_banner.field_banner_content
+field_name: field_banner_content
+entity_type: node
+bundle: hcl_banner
+label: 'Banner Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

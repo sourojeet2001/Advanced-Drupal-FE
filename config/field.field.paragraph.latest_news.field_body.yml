@@ -1,0 +1,22 @@
+uuid: 63e2f17a-a5c0-4561-971b-c64a8818839c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.latest_news
+  module:
+    - text
+id: paragraph.latest_news.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: latest_news
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

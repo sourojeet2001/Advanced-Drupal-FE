@@ -1,0 +1,23 @@
+@use "../base/variables" as *;
+
+.views-field-field-banner-image img.img-fluid {
+  height: 600px;
+  width: 100%;
+}
+.slick-slide {
+  position: $parent--position;
+  z-index: -200;
+}
+.one-time {
+  position: $parent--position;
+}
+.views-field.views-field-field-banner-content {
+  position: $child--position;
+  top: 200px;
+  color: $primary--background;
+  left: 100px;
+}
+
+h1.field-content {
+  font-size: 3.5rem;
+}

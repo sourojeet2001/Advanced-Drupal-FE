@@ -1,0 +1,21 @@
+uuid: 6139aa2d-874c-49e8-82f3-4f3a44ed9a33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_design_format
+    - node.type.stories
+  module:
+    - options
+id: node.stories.field_design_format
+field_name: field_design_format
+entity_type: node
+bundle: stories
+label: 'Design Format'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

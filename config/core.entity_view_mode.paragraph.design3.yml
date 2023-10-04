@@ -1,0 +1,10 @@
+uuid: 262374a0-14e7-4cd1-8676-b04dd5418204
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.design3
+label: Design3
+targetEntityType: paragraph
+cache: true

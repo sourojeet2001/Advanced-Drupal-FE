@@ -1,0 +1,45 @@
+uuid: fe4929aa-787a-4fc6-8d2d-d9275449f66d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.our_stories.field_story_body
+    - field.field.paragraph.our_stories.field_story_image
+    - field.field.paragraph.our_stories.field_story_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.our_stories
+  module:
+    - image
+    - text
+id: paragraph.our_stories.default
+targetEntityType: paragraph
+bundle: our_stories
+mode: default
+content:
+  field_story_body:
+    type: text_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_story_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_story_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,30 @@
+uuid: dc387af3-aa79-4509-af8a-f9e690b787dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_design_format
+field_name: field_design_format
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Design 1'
+      label: 'Design 1'
+    -
+      value: 'Design 2'
+      label: 'Design 2'
+    -
+      value: 'Design 3'
+      label: 'Design 3'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

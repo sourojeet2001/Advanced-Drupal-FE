@@ -1,0 +1,22 @@
+uuid: e1485983-c1bb-40ca-8206-ac05bfc96eb9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - my_hcl
+_core:
+  default_config_hash: VShtwe72J2j41BJzApoNbs8l554EpngM5RTObxM7yiw
+id: my_hcl_breadcrumbs
+theme: my_hcl
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

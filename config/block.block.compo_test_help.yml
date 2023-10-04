@@ -1,0 +1,22 @@
+uuid: 21da05b4-4c2d-49e2-b8a4-45c327be13b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - compo_test
+_core:
+  default_config_hash: S0Y16qIQfKiOEzWlddOGk3u_BKwAruAheA8VVFfGbLc
+id: compo_test_help
+theme: compo_test
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

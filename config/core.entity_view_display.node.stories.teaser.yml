@@ -1,0 +1,24 @@
+uuid: 9d36ce9b-eaf9-452e-91be-87143503177d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.stories.field_design_format
+    - field.field.node.stories.field_our_stories
+    - node.type.stories
+  module:
+    - user
+id: node.stories.teaser
+targetEntityType: node
+bundle: stories
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_design_format: true
+  field_our_stories: true

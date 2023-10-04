@@ -1,0 +1,22 @@
+uuid: 461a9778-ddd4-4f8d-b7f4-464b8adaa4cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - my_hcl
+_core:
+  default_config_hash: 1o0W13wt232YmsDYiRA5xtlFq0L2WNS7FmIVbBeuhIY
+id: my_hcl_content
+theme: my_hcl
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

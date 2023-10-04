@@ -1,0 +1,46 @@
+uuid: e8ffe9f6-9d58-409a-b7f3-c08d2215a1d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.design1
+    - field.field.paragraph.our_stories.field_story_body
+    - field.field.paragraph.our_stories.field_story_image
+    - field.field.paragraph.our_stories.field_story_title
+    - image.style.award_thumnail
+    - paragraphs.paragraphs_type.our_stories
+  module:
+    - image
+    - text
+id: paragraph.our_stories.design1
+targetEntityType: paragraph
+bundle: our_stories
+mode: design1
+content:
+  field_story_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_story_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: award_thumnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_story_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 0f853f42-49f3-4688-84bf-1a9473dfe310
+langcode: en
+status: true
+dependencies:
+  theme:
+    - compo_test
+_core:
+  default_config_hash: yX9o6NcntZnXRDfbJoHY1pJwuXlumW44m5AMs347NN4
+id: compo_test_local_tasks
+theme: compo_test
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: ed9d3466-47f6-4ffc-866e-9245f19397bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - my_hcl
+_core:
+  default_config_hash: S0Y16qIQfKiOEzWlddOGk3u_BKwAruAheA8VVFfGbLc
+id: my_hcl_help
+theme: my_hcl
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

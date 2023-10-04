@@ -1,0 +1,22 @@
+uuid: f754614e-ee62-469d-bd1a-ab8d34fc45e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - emulsify
+_core:
+  default_config_hash: 9LdMj38y4GDi23GrIUtIZIV1bJEn1C47N19jrswvcLc
+id: emulsify_messages
+theme: emulsify
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }
