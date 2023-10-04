@@ -1,0 +1,74 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.slick-next::before {
+  content: '→';
+  position: $child--position;
+  top: $button--top;
+  right: 1122px;
+  color: black;
+  border: $border;
+  background: $primary--background;
+  padding: $button--padding;
+  border-radius: $button--border-radius;
+}
+
+.slick-prev::before {
+  position: $child--position;
+  content: '←';
+  color: $secondary--color;
+  top: $button--top;
+  left: 29px;
+  border: $border;
+  background: $primary--background;
+  padding: $button--padding;
+  border-radius: $button--border-radius;
+  z-index: 100;
+}
+
+.button.button01 {
+  position: $parent--position;
+  top: -300px;
+  left: 115px;
+  z-index: 100;
+}
+
+.button a{
+  position: $parent--position;
+  display: inline-block;
+  padding: .8em 4em;
+  border: 2px solid $primary--background;
+  color: $primary--background;
+  font-size: 18px;
+  font-family: $link--font;
+  font-weight: $brand--font-weight;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s;
+
+  &::before {
+    position: $child--position;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    background: #fb5454;
+    transition: transform .3s;
+  }
+
+  &:hover {
+    color: $primary--background;
+  }
+}
+
+.button01 a::before {
+  transform-origin: right top;
+  transform: scale(0, 1);
+}
+
+.button01 a:hover::before {
+  transform-origin: left top;
+  @include transform;
+}

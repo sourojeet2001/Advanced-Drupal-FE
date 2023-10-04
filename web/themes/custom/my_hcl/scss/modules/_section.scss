@@ -1,0 +1,34 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.mycontainer {
+  width: $container--width;
+  margin: $container--margin;
+  padding: $container--padding;
+}
+.paragraph.paragraph--type--latest-news.paragraph--view-mode--default {
+  border: 5px solid $primary--background;
+  background-color: $primary--background;
+  border-radius: $section--border-radius;
+  width: $section--paragraph-width;
+}
+.field.field--name-field-news-image.field--type-image.field--label-hidden.field__item {
+  overflow: hidden;
+}
+.paragraph.paragraph--type--latest-news.paragraph--view-mode--default img {
+  border-top-left-radius: $section--border-radius;
+  border-top-right-radius: $section--border-radius;
+  transition: 0.3s;
+
+  &:hover {
+    @include image-zoom;
+    border-top-left-radius: $section--border-radius;
+    border-top-right-radius: $section--border-radius;
+  }
+}
+.infobox {
+  padding: 4px 67px;
+}
+.field--type-link a {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,25 @@
+uuid: 309ba267-b04f-44c0-aaf4-c7851d3acb0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - compo_test
+_core:
+  default_config_hash: nuW1Z5MdvzbCCEZ9RQojaEWB6Zni32zTq-v5OWbS2sc
+id: compo_test_branding
+theme: compo_test
+region: header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

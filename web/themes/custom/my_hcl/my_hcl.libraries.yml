@@ -1,0 +1,28 @@
+bannerslider:
+  version: 1.x
+  css:
+    theme:
+      dist/css/main.min.css: {}
+  js:
+    js/bannerslider.js: {}
+    js/lazyloader.js: {}
+  dependencies:
+      - core/drupal
+      - core/once
+      - core/jquery
+      - core/drupalSettings
+
+slick:
+  version: VERSION
+  css:
+    theme:
+      //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css: {type: external}
+      //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css: {type: external}
+  js:
+    //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js: {type: external}
+    js/slider.js: {}
+  dependencies:
+      - core/drupal
+      - core/once
+      - core/jquery
+      - core/drupalSettings

@@ -12,15 +12,19 @@ module:
   breakpoint: 0
   ckeditor5: 0
   comment: 0
+  components: 0
   config: 0
   contact: 0
   contextual: 0
+  custom_twig_filters: 0
   datetime: 0
   dblog: 0
   devel: 0
   devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
+  emulsify_twig: 0
+  entity_reference_revisions: 0
   field: 0
   field_ui: 0
   file: 0
@@ -38,7 +42,9 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  sdc: 0
   search: 0
+  serialization: 0
   shortcut: 0
   standard: 0
   system: 0
@@ -54,10 +60,14 @@ module:
   webform: 0
   webform_ui: 0
   views: 10
+  paragraphs: 11
 theme:
   olivero: 0
   claro: 0
   stable9: 0
   bootstrap5: 0
   custom_theme: 0
+  compo_test: 0
+  emulsify: 0
+  my_hcl: 0
 profile: standard

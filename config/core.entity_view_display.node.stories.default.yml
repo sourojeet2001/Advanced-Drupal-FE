@@ -1,0 +1,39 @@
+uuid: 6d246466-0ba7-4a80-9ea0-11560c583106
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.stories.field_design_format
+    - field.field.node.stories.field_our_stories
+    - node.type.stories
+  module:
+    - entity_reference_revisions
+    - options
+    - user
+id: node.stories.default
+targetEntityType: node
+bundle: stories
+mode: default
+content:
+  field_design_format:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_our_stories:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

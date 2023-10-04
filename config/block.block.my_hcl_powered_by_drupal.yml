@@ -1,0 +1,22 @@
+uuid: 25f9819c-697c-4eb9-af6c-39bdd074cdd9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - my_hcl
+_core:
+  default_config_hash: 2_xxaOb8b_0AUgYFdJLxIBDDwufyh6YozhGfBd97p38
+id: my_hcl_powered_by_drupal
+theme: my_hcl
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 009b8548-3d5c-45d6-a001-0d548480c490
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - compo_test
+_core:
+  default_config_hash: 1o0W13wt232YmsDYiRA5xtlFq0L2WNS7FmIVbBeuhIY
+id: compo_test_content
+theme: compo_test
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

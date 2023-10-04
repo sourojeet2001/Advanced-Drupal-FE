@@ -1,0 +1,20 @@
+uuid: 08342c0a-8922-46c2-959c-b37cffa14c3b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - compo_test
+_core:
+  default_config_hash: MBqG1B5mr5-fPSCDyTR6z2zVTRxZ10XeS_pAw6C7za4
+id: compo_test_local_actions
+theme: compo_test
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

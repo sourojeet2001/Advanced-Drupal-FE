@@ -1,0 +1,26 @@
+@use "../base/variables" as *;
+
+.custom-header {
+  display: $flex-display;
+  justify-content: space-between;
+
+  & h1 {
+    color: $brand--color;
+    padding-top: 5px;
+    font-weight: $brand--font-weight;
+  }
+}
+
+.custom-nav .navbar-nav {
+  padding-top: 10px;
+  display: $flex-display;
+  flex-direction: row;
+  font-weight: $brand--font-weight;
+  font-size: 20px;
+  color: $secondary--color;
+
+  & li:hover {
+    color: $brand--color;
+    font-weight: $highlighted-menu;
+  }
+}

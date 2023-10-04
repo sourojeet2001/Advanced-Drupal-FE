@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.movie_awards.body
     - field.field.node.movie_awards.field_movie_poster
     - field.field.node.movie_awards.field_release_date
-    - image.style.thumbnail
+    - image.style.award_thumnail
     - node.type.movie_awards
   module:
     - datetime
@@ -28,10 +28,10 @@ content:
     region: content
   field_movie_poster:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
-      image_style: thumbnail
+      image_style: award_thumnail
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -42,7 +42,7 @@ content:
     label: above
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: custom_date_month_
     third_party_settings: {  }
     weight: 103
     region: content

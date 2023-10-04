@@ -1,0 +1,22 @@
+uuid: 4e4f458d-25f1-4109-b593-ac01efe0c1f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - compo_test
+_core:
+  default_config_hash: 2_xxaOb8b_0AUgYFdJLxIBDDwufyh6YozhGfBd97p38
+id: compo_test_powered_by_drupal
+theme: compo_test
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,31 @@
+uuid: d47928ca-823c-43a0-9967-e5f15fd5af7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_latest_news
+    - node.type.hcl_banner
+    - paragraphs.paragraphs_type.latest_news
+  module:
+    - entity_reference_revisions
+id: node.hcl_banner.field_latest_news
+field_name: field_latest_news
+entity_type: node
+bundle: hcl_banner
+label: 'Latest News'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      latest_news: latest_news
+    negate: 0
+    target_bundles_drag_drop:
+      latest_news:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

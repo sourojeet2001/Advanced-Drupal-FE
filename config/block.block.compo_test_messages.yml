@@ -1,0 +1,22 @@
+uuid: 17bc0d5c-dc3a-4607-be01-ff5895e6a82d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - compo_test
+_core:
+  default_config_hash: 9LdMj38y4GDi23GrIUtIZIV1bJEn1C47N19jrswvcLc
+id: compo_test_messages
+theme: compo_test
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

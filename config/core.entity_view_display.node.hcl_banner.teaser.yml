@@ -1,0 +1,28 @@
+uuid: 0b1704b8-c56e-4de1-95f8-2d7db49196dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hcl_banner.field_banner_content
+    - field.field.node.hcl_banner.field_banner_image
+    - field.field.node.hcl_banner.field_latest_news
+    - field.field.node.hcl_banner.field_link
+    - node.type.hcl_banner
+  module:
+    - user
+id: node.hcl_banner.teaser
+targetEntityType: node
+bundle: hcl_banner
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_banner_content: true
+  field_banner_image: true
+  field_latest_news: true
+  field_link: true

@@ -1,0 +1,22 @@
+uuid: 3bf67935-716f-41a9-b4c7-c93d1133516f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hcl_banner
+id: node.hcl_banner.promote
+field_name: promote
+entity_type: node
+bundle: hcl_banner
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

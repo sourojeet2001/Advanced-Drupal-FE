@@ -1,0 +1,20 @@
+uuid: 310edc15-f8a6-43b4-b36b-31a1a55e875a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - my_hcl
+_core:
+  default_config_hash: MBqG1B5mr5-fPSCDyTR6z2zVTRxZ10XeS_pAw6C7za4
+id: my_hcl_local_actions
+theme: my_hcl
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }
