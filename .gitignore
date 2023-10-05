@@ -57,5 +57,5 @@ web/sites/*/modules/custom/*/vendor/
 /web/vendor/
 /web/themes/custom/custom_theme/fire.jpg
 /web/themes/custom/custom_theme/logo.png
-/web/themes/custom/custom_theme/node_modules/
-web/themes/custom/custom_theme/images/
+/web/themes/custom/*/node_modules/
+/web/themes/custom/*/images/

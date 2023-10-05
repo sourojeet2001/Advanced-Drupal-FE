@@ -1,0 +1,21 @@
+@use "../base/variables" as *;
+
+.design2, .design3 {
+  width: 500px;
+  padding: $base--padding;
+}
+.design1 {
+  width: 350px;
+  padding: $base--padding;
+  background: #529a94;
+  margin-bottom: 15px;
+}
+.design2 {
+  background: wheat;
+  margin-bottom: 15px;
+  border-radius: 30px;
+}
+.design3 {
+  background: rgb(254, 213, 220);
+  margin-bottom: 13px;
+}

@@ -1,0 +1,62 @@
+@use "./variables" as *;
+
+.imagewrap2, .imagewrap1 {
+  display: flex;
+  justify-content: $primary--alignment;
+
+  & img {
+    height: $primary--height;
+    width: $primary--width;
+    align-items: $primary--alignment;
+  }
+}
+
+.imagewrap2 img {
+  border-radius: 50%;
+}
+.imagewrap1 {
+  position: relative;
+  margin-bottom: 30px;
+
+  & img {
+    padding: 10px;
+  }
+}
+
+.titlewrap3, .titlewrap2 {
+  text-align: $primary--alignment;
+  font-weight: $bold--font-weight;
+  font-size: $larger--font-size;
+}
+.titlewrap2 {
+  color: darkblue;
+}
+.titlewrap1 {
+  position: absolute;
+  color: $primary--background-color;
+  font-weight: $bold--font-weight;
+  bottom: -15px;
+  left: 65px;
+}
+
+.bodywrap2, .bodywrap3 {
+  text-align: $primary--alignment;
+  font-size: $larger--font-size;
+  font-weight: $bold--font-weight;
+  padding: $body--padding;
+  padding-bottom: $body--padding-bottom;
+}
+.bodywrap2 {
+  color: $primary--text-color;
+}
+.bodywrap3 {
+  position: absolute;
+  color: $primary--background-color;
+}
+.bodywrap1 {
+  align-items: left;
+}
+
+.img-fluid {
+  margin: 0;
+}

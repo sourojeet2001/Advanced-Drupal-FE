@@ -1,0 +1,12 @@
+@use "../mixins/mixins" as *;
+
+.overlay1 {
+  position: absolute;
+  top: 10px;
+  left: 65px;
+  width: 100px;
+  height: 210px;
+  opacity: 0.5;
+  @include transition-ease;
+  background-color: #e34b67;
+}
