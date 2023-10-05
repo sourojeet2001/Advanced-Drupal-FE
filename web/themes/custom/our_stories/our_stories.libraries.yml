@@ -1,0 +1,6 @@
+# Main theme library.
+customdesign:
+  version: 1.x
+  css:
+    theme:
+      dist/css/customdesign.min.css: {}
